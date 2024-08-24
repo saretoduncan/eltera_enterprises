@@ -1,7 +1,8 @@
 import logo from "/eltera_logo.png";
-import { BiSolidPhoneCall } from "react-icons/bi";
+
 import { Constants, NavLinks } from "../../types/navigation_types";
 import NavLinkComponent from "./NavLinkComponent";
+import CallLinkComponent from "./CallLinkComponent";
 
 const Navbar = () => {
   return (
@@ -30,19 +31,7 @@ const Navbar = () => {
             />
           </section>
           <section>
-            <div className=" lg:text-xl lg:font-bold">
-              <a
-                href={`tel:${Constants.phoneNumber}`}
-                className="lg:flex lg:items-center lg:space-x-1"
-              >
-                <div className="rounded-full p-2 bg-slate-50 bg-opacity-35">
-                  <div className="rounded-full p-2 bg-slate-50 bg-opacity-50">
-                    <BiSolidPhoneCall className="" />
-                  </div>
-                </div>
-                <p>{Constants.phoneNumber}</p>
-              </a>
-            </div>
+            <CallLinkComponent />
           </section>
         </div>
       </nav>

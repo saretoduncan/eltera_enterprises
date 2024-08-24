@@ -1,17 +1,23 @@
-import { useState } from "react";
-
-type THoverHookProp = {
-  initialValue: boolean;
+import { useCallback, useState } from "react";
+type TReturnHook = {
+  isHovered: boolean;
+  handleMouseEnter: () => void;
+  handleMouseLeave: () => void;
 };
-const useHoverHook = ({ initialValue }: THoverHookProp) => {
+const useHoverHook = (initialValue: boolean): TReturnHook => {
   const [isHovered, setIsHovered] = useState(initialValue);
-  const handleMouseEnter = () => {
+  const handleMouseEnter = useCallback(() => {
     setIsHovered(() => true);
-  };
-  const handleMouseLeave = () => {
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
     setIsHovered(() => false);
+  }, []);
+  return {
+    isHovered,
+    handleMouseEnter,
+    handleMouseLeave,
   };
-  return [isHovered, handleMouseEnter, handleMouseLeave] as const;
 };
 
 export default useHoverHook;
