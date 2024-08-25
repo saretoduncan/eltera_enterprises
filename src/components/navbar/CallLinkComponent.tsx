@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Constants } from "../../types/navigation_types";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import useHoverHook from "../customHooks/useHoverHook";
@@ -7,20 +6,20 @@ const CallLinkComponent = () => {
 
   return (
     <>
-      <div className=" lg:text-xl lg:font-bold">
+      <div className=" lg:text-lg font-bold">
         <a
           href={`tel:${Constants.phoneNumber}`}
-          className="lg:flex lg:items-center lg:space-x-1 "
+          className="flex items-center space-x-2 lg:space-x-1 "
           onMouseEnter={() => handleMouseEnter()}
           onMouseLeave={() => handleMouseLeave()}
         >
           <div
-            className={`rounded-full p-2 transition-all duration-500 ease-in-out ${
+            className={`rounded-full p-1 transition-all duration-500 ease-in-out ${
               isHovered ? "bg-orange-500" : "bg-slate-50 bg-opacity-50 "
             }`}
           >
             <div
-              className={`rounded-full p-2 transition-all duration-500 ease-in-out ${
+              className={`rounded-full p-1 transition-all duration-500 ease-in-out ${
                 isHovered ? "bg-orange-500" : "bg-slate-50 bg-opacity-50 "
               }`}
             >

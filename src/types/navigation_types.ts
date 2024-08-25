@@ -16,5 +16,5 @@ export const NavLinks: TNavData = {
 };
 
 export const Constants: TConstants = {
-  phoneNumber: "+254 715 691 186",
+  phoneNumber: "+254 721 594 969",
 };

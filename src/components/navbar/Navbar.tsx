@@ -1,18 +1,27 @@
-import logo from "/eltera_logo.png";
-
-import { Constants, NavLinks } from "../../types/navigation_types";
+import logo from "/eltera_logo.webp";
+import { NavLinks } from "../../types/navigation_types";
 import NavLinkComponent from "./NavLinkComponent";
 import CallLinkComponent from "./CallLinkComponent";
+import { FaBars } from "react-icons/fa6";
+import { useContext } from "react";
+import { NavBarContext } from "../../contexts/context";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
+  const openNav = useContext(NavBarContext);
+
   return (
     <>
-      <nav className="w-full bg-primaryBlue bg-opacity-90 py-4  lg:px-4 2xl:px-0 ">
-        <div className="xl:container mx-auto lg:flex lg:items-center lg:justify-between text-white">
+      <nav className="w-full  py-4">
+        <div className="xl:container mx-auto flex items-center justify-between text-white px-4 2xl:px-0">
           <section>
-            <img src={logo} className="w-[150px]" alt="company logo" />
+            <img
+              src={logo}
+              className="w-[80px] lg:w-[130px]"
+              alt="company logo"
+            />
           </section>
-          <section className="lg:flex lg:space-x-4 ">
+          <section className="hidden lg:flex lg:space-x-4  ">
             <NavLinkComponent
               to={NavLinks.homePage.to}
               name={NavLinks.homePage.name}
@@ -30,8 +39,16 @@ const Navbar = () => {
               name={NavLinks.contactPage.name}
             />
           </section>
-          <section>
+          <section className="hidden lg:block">
             <CallLinkComponent />
+          </section>
+          <section className="lg:hidden">
+            <button
+              onClick={() => openNav?.setIsSideNavOpen(!openNav.isSideNavOpen)}
+             className="text-2xl">{
+             openNav?.isSideNavOpen?<IoClose />:<FaBars/>
+            }
+                          </button>
           </section>
         </div>
       </nav>
