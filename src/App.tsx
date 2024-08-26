@@ -15,7 +15,7 @@ function App() {
           <DropNavBar />
         </NavBarContextWrapper>
       </header>
-      <main>
+      <main className="w-full">
         <MainRouters />
       </main>
     </>

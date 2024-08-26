@@ -8,11 +8,11 @@ const HomePage = () => {
       <section>
         <HeroSection />
       </section>
-      <section>
+      <section >
         <WhyChooseUs />
       </section>
       <section>
-        {/* <FeaturesSection /> */}
+        <FeaturesSection />
       </section>
     </>
   );
