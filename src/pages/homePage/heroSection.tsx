@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className={`w-screen h-[32rem] md:h-[34rem] lg:h-[30rem] xl:h-[34rem] relative bg-cover bg-no-repeat bg-center grid`}
+        className={`w-full h-[32rem] md:h-[34rem] lg:h-[30rem] xl:h-[34rem] relative bg-cover bg-no-repeat bg-center grid`}
         style={{ backgroundImage: "url(" + "'" + roadLorries + "'" + ")" }}
       >
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-primaryBlue to-[#11111170] grid px-4 lg:px-8 xl:px-0 ">

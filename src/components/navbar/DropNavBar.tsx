@@ -9,7 +9,7 @@ const DropNavBar = () => {
   return (
     <>
       <nav
-        className={`w-full absolute top-[77px] p-4 text-white space-y-4 bg-opacity-80 bg-primaryBlue rounded-b-lg z-10 transition-all duration-700 ease-in-out ${
+        className={`w-full fixed top-[77px] p-4 text-white space-y-4 bg-opacity-80 bg-primaryBlue rounded-b-lg z-10 transition-all duration-700 ease-in-out ${
           openNav?.isSideNavOpen ? "translate-x-0" : "translate-x-[-150%]"
         } lg:hidden`}
       >
