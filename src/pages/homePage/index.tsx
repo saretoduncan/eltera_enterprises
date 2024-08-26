@@ -1,5 +1,13 @@
+import HeroSection from "./heroSection";
+
 const HomePage = () => {
-  return <div> HomePage</div>;
+  return (
+    <>
+     <section>
+       <HeroSection/>
+     </section>
+    </>
+  );
 };
 
 export default HomePage;
