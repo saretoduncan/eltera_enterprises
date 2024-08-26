@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full  py-4">
-        <div className=" mx-auto flex items-center justify-between text-white px-4 lg:w-[1280px]  2xl:px-0">
+      <nav className="w-full  py-4 xl:w-[1280px] mx-auto">
+        <div className="w-full  flex items-center justify-between text-white px-4  2xl:px-0">
           <section>
             <img
               src={logo}
