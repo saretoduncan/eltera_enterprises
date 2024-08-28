@@ -15,12 +15,12 @@ const CallLinkComponent = () => {
         >
           <div
             className={`rounded-full p-1 transition-all duration-500 ease-in-out ${
-              isHovered ? "bg-orange-500" : "bg-slate-50 bg-opacity-50 "
+              isHovered ? "bg-secondary-color" : "bg-slate-50 bg-opacity-50 "
             }`}
           >
             <div
               className={`rounded-full p-1 transition-all duration-500 ease-in-out ${
-                isHovered ? "bg-orange-500" : "bg-slate-50 bg-opacity-50 "
+                isHovered ? "bg-secondary-color" : "bg-slate-50 bg-opacity-50 "
               }`}
             >
               <BiSolidPhoneCall className="" />

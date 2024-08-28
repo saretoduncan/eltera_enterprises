@@ -9,7 +9,8 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
       colors: {
-        primaryBlue: "#262262",
+        primaryBlue: "#111",
+        "secondary-color": "#CD7F32",
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
