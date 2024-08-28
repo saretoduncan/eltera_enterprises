@@ -1,9 +1,23 @@
-import "./App.css";
+import MainRouters from "./MainRoutes";
+import DropNavBar from "./components/navbar/DropNavBar";
+import Navbar from "./components/navbar/Navbar";
+import NavBarContextWrapper from "./contexts/NavBarContextWrapper";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-yellow-500">Hello world!</h1>
+      {" "}
+      <header className="relative">
+        <NavBarContextWrapper>
+          <section className="bg-primaryBlue bg-opacity-80 w-full fixed z-20 h-[77px] lg:h-[100px] ">
+            <Navbar />
+          </section>
+          <DropNavBar />
+        </NavBarContextWrapper>
+      </header>
+      <main>
+        <MainRouters />
+      </main>
     </>
   );
 }
