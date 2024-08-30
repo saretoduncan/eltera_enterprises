@@ -15,7 +15,7 @@ const FooterComponent = () => {
           <section className=" space-y-2 md:flex  md:flex-col-reverse ">
             <div>
               <Link to={NavLinks.homePage.to}>
-                <img src={logo} alt="logo" className="w-[200px]" />
+                <img src={logo} alt="logo" className="md:w-[200px] w-[150px]" />
               </Link>
             </div>
             <div>
@@ -39,7 +39,7 @@ const FooterComponent = () => {
                 Quick Navigation
               </h4>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 text-sm  md:text-md">
               <div className="">
                 <NavLinkComponent
                   to={NavLinks.homePage.to}
@@ -70,7 +70,7 @@ const FooterComponent = () => {
             <h4 className="text-secondary-color font-bold capitalize">
               Get in touch
             </h4>
-            <div className="space-y-2">
+            <div className="space-y-2 text-sm  md:text-md">
               <FooterAddressComponent
                 name="Nairobi, Kenya"
                 icon={FaLocationDot}
