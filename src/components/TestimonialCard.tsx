@@ -14,7 +14,7 @@ const TestimonialCard: React.FC<TTestimonialType> = ({
         </div>
         <div>
           <div className=" space-y-4">
-            <p className=" text-sm">{content}</p>
+            <p className="text:sm xl:text-base">{content}</p>
             <div>
               <figure className="grid space-y-2">
                 <img
