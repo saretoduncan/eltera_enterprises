@@ -1,3 +1,4 @@
+import CallToActionComponent from "../../components/callToActionComponent";
 import FeaturesSection from "./featuresSection";
 import HeroSection from "./heroSection";
 import TestimonialSection from "./testimonialSection";
@@ -17,6 +18,9 @@ const HomePage = () => {
       </section>
       <section>
         <TestimonialSection />
+      </section>
+      <section>
+        <CallToActionComponent />
       </section>
     </>
   );

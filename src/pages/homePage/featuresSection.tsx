@@ -1,4 +1,5 @@
-import lightBgSvg from "../../assets/light_networking_bg copy.svg";
+import lightBgSvg from "../../assets/light_networking_bg.svg";
+import darkBgSvg from "../../assets/dark_networking_bg.svg"
 import savana_lorry from "../../assets/savana_lorry.webp";
 import driver_pic from "../../assets/lorry_driver.webp";
 import TertiaryLinkButton from "../../components/Buttons/TertiaryLinkButton";
@@ -48,7 +49,7 @@ const FeaturesSection = () => {
           <section className="bg-white ">
             <div
               className="bg-cover bg-no-repeat  text-gray-700 px-6  py-4  h-full lg:p-10"
-              style={{ backgroundImage: "url(" + "'" + lightBgSvg + "'" + ")" }}
+              style={{ backgroundImage: "url(" + "'" +darkBgSvg + "'" + ")" }}
             >
               <AnimateToLeft>
                 <div className="space-y-4">
