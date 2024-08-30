@@ -3,6 +3,8 @@ import roadLorries from "../../assets/road_lorries.webp";
 import { NavLinks } from "../../types/navigation_types";
 import SecondaryLinkButton from "../../components/Buttons/SecondaryLinkButton";
 import TertiaryLinkButton from "../../components/Buttons/TertiaryLinkButton";
+
+
 const HeroSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
