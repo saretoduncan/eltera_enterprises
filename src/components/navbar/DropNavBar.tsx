@@ -3,13 +3,17 @@ import { NavBarContext } from "../../contexts/context";
 import { NavLinks } from "../../types/navigation_types";
 import CallLinkComponent from "./CallLinkComponent";
 import NavLinkComponent from "./NavLinkComponent";
+import useNavChangeHook from "../customHooks/useNavChangeHook";
 
 const DropNavBar = () => {
   const openNav = useContext(NavBarContext);
+  const { isNavFull } = useNavChangeHook();
   return (
     <>
       <nav
-        className={`w-full fixed top-[77px] p-4 text-white space-y-4 bg-opacity-80 bg-primaryBlue rounded-b-lg z-10 transition-all duration-700 ease-in-out ${
+        className={`w-full fixed top-[77px] p-4 text-white space-y-4 ${
+          isNavFull ? "bg-opacity-100" : "bg-opacity-80"
+        }  bg-primaryBlue rounded-b-lg z-10 transition-all duration-700 ease-in-out ${
           openNav?.isSideNavOpen ? "translate-x-0" : "translate-x-[-150%]"
         } lg:hidden`}
       >

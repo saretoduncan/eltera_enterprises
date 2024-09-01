@@ -6,7 +6,7 @@ const SecondaryLinkButton: React.FC<TLinkuttonType> = ({ to, name }) => {
     <>
       <Link
         to={to}
-        className="bg-slate-100 text-primaryBlue rounded  px-4 py-2 font-bold hover:bg-orange-500 hover:text-slate-100 transition-all ease-in-out duration-500  "
+        className="bg-slate-100 text-primaryBlue rounded  px-4 py-2 font-bold hover:bg-secondary-color hover:text-slate-100 transition-all ease-in-out duration-500  "
       >
         {name}
       </Link>

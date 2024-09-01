@@ -1,5 +1,7 @@
+import CallToActionComponent from "../../components/callToActionComponent";
 import FeaturesSection from "./featuresSection";
 import HeroSection from "./heroSection";
+import TestimonialSection from "./testimonialSection";
 import WhyChooseUs from "./whyChooseUs";
 
 const HomePage = () => {
@@ -12,7 +14,13 @@ const HomePage = () => {
         <WhyChooseUs />
       </section>
       <section>
-        {/* <FeaturesSection /> */}
+        <FeaturesSection />
+      </section>
+      <section>
+        <TestimonialSection />
+      </section>
+      <section>
+        <CallToActionComponent />
       </section>
     </>
   );

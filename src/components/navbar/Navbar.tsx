@@ -7,9 +7,10 @@ import { useContext } from "react";
 import { NavBarContext } from "../../contexts/context";
 import { IoClose } from "react-icons/io5";
 
+
 const Navbar = () => {
   const openNav = useContext(NavBarContext);
-
+  
   return (
     <>
       <nav className="w-full  py-4 xl:w-[1280px] mx-auto">
@@ -45,10 +46,10 @@ const Navbar = () => {
           <section className="lg:hidden">
             <button
               onClick={() => openNav?.setIsSideNavOpen(!openNav.isSideNavOpen)}
-             className="text-2xl">{
-             openNav?.isSideNavOpen?<IoClose />:<FaBars/>
-            }
-                          </button>
+              className="text-2xl"
+            >
+              {openNav?.isSideNavOpen ? <IoClose /> : <FaBars />}
+            </button>
           </section>
         </div>
       </nav>

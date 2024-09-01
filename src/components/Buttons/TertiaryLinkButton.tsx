@@ -8,7 +8,7 @@ const TertiaryLinkButton: React.FC<TLinkuttonType> = ({ to, name }) => {
     <>
       <Link
         to={to}
-        className="bg-orange-500  text-slate-100 rounded  px-4 py-2 font-bold hover:bg-slate-100 hover:text-primaryBlue transition-all ease-in-out duration-500"
+        className="bg-secondary-color  text-slate-100 rounded  px-4 py-2 font-bold hover:bg-slate-100 hover:text-primaryBlue transition-all ease-in-out duration-500"
       >
         {name}
       </Link>
