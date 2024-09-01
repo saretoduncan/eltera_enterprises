@@ -32,7 +32,7 @@ const NavLinkComponent: React.FC<TNavLink> = ({ to, name }) => {
       >
         <p>{name}</p>
         <div
-          className={`absolute h-[2px]  bg-white transition-all duration-500 ease-in-out ${
+          className={`absolute h-[2px]  bg-secondary-color transition-all duration-500 ease-in-out ${
             isHovered || currentPathLocation === to ? "w-full" : "w-0"
           }`}
         ></div>
