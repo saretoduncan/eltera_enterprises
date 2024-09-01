@@ -11,7 +11,7 @@ const AnimateToLeft: React.FC<TAnimateWrapper> = ({ children }) => {
       ref={ref}
       className={`${
         inView ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-      } transition-all ease-in-out duration-700 `}
+      } transition-all ease-in-out duration-700  `}
     >
       {children}
     </div>

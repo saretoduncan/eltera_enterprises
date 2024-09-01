@@ -1,5 +1,4 @@
 import CallToActionComponent from "../../components/callToActionComponent";
-import OurMission from "./OurMission";
 import HeroSection from "./heroSection";
 import OurVisionAndCore from "./ourVisionAndCore";
 import WhoAreWeSection from "./whoAreWeSection";

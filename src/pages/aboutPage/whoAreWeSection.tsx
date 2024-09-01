@@ -25,7 +25,7 @@ const WhoAreWeSection = () => {
               </div>
             </div>
 
-            <div className=" lg:self-center">
+            <div className=" lg:self-center overflow-x-hidden">
               {" "}
               <AnimateToLeft>
                 <h3 className="font-bold text-xl capitalize text-secondary-color my-2 lg:text-2xl">
