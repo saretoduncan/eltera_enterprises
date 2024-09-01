@@ -1,3 +1,4 @@
+import CallToActionComponent from "../../components/callToActionComponent";
 import OurMission from "./OurMission";
 import HeroSection from "./heroSection";
 import OurVisionAndCore from "./ourVisionAndCore";
@@ -15,6 +16,9 @@ const AboutPage = () => {
       <section>
         {/* <OurMission /> */}
         <OurVisionAndCore/>
+      </section>
+      <section>
+        <CallToActionComponent/>
       </section>
     </>
   );
