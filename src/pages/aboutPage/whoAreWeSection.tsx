@@ -1,13 +1,14 @@
 import lightTruck from "../../assets/lightruck_highway.webp";
 import AnimateToLeft from "../../components/animationComponents/AnimateToLeft";
 import trapezium from "../../assets/trapezium.svg";
+import AnimateToRight from "../../components/animationComponents/AnimateToRight";
 const WhoAreWeSection = () => {
   return (
     <>
       <div className="text-gray-800 my-12  ">
         <div className="px-4  2xl:w-[1280px] 2xl:mx-auto">
-          <div className="grid lg:grid-cols-2 gap-10">
-            <div className="relative ">
+          <div className="grid lg:grid-cols-2 gap-10 ">
+            <div className="relative hidden lg:block">
               <div className="absolute  rounded left-0  w-[100%] ">
                 <img
                   src={trapezium}
@@ -46,17 +47,18 @@ const WhoAreWeSection = () => {
               </AnimateToLeft>
             </div>
           </div>
-          <div className="my-8 lg:m-10">
-            <h3 className="font-bold text-xl capitalize text-secondary-color my-2 lg:text-2xl">
-              Our mission
-            </h3>
-            <p className="text-sm lg:text-base">
-              Eltera Enterprises is committed to providing exceptional
-              transportation solutions that connect businesses and communities
-              across Kenya, while fostering a culture of excellence, innovation,
-              and sustainability.
-            </p>
-            <p></p>
+          <div className="my-8 lg:m-10 overflow-hidden">
+            <AnimateToRight>
+              <h3 className="font-bold text-xl capitalize text-secondary-color my-2 lg:text-2xl">
+                Our mission
+              </h3>
+              <p className="text-sm lg:text-base">
+                Eltera Enterprises is committed to providing exceptional
+                transportation solutions that connect businesses and communities
+                across Kenya, while fostering a culture of excellence,
+                innovation, and sustainability.
+              </p>
+            </AnimateToRight>
           </div>
         </div>
       </div>
