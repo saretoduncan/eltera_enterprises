@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useHoverHook from "../customHooks/useHoverHook";
 import { NavBarContext } from "../../contexts/context";
