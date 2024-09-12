@@ -1,4 +1,4 @@
-import logo from "/eltera_logo.webp";
+import logo from "../../assets/eltera_logo.webp";
 import { NavLinks } from "../../types/navigation_types";
 import NavLinkComponent from "./NavLinkComponent";
 import CallLinkComponent from "./CallLinkComponent";

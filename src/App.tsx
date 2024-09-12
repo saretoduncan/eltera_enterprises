@@ -4,12 +4,13 @@ import Navbar from "./components/navbar/Navbar";
 import NavBarContextWrapper from "./contexts/NavBarContextWrapper";
 import useNavChangeHook from "./components/customHooks/useNavChangeHook";
 import FooterComponent from "./components/FooterComponent";
+import WhatsAppComponent from "./components/WhatsAppComponent";
 function App() {
   const { isNavFull } = useNavChangeHook();
   return (
     <>
       {" "}
-      <div className=" flex flex-col justify-between min-h-screen">
+      <div className=" flex flex-col justify-between min-h-screen ">
         <section>
           <header className="relative">
             <NavBarContextWrapper>
@@ -30,6 +31,7 @@ function App() {
         <section>
           <FooterComponent />
         </section>
+        <WhatsAppComponent />
       </div>
     </>
   );

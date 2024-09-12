@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { NavLinks } from "../types/navigation_types";
-import logo from "/eltera_logo.webp";
+import logo from "../assets/eltera_logo.webp";
 import NavLinkComponent from "./navbar/NavLinkComponent";
 import FooterAddressComponent from "./FooterAddressComponent";
 import { FaLocationDot } from "react-icons/fa6";
